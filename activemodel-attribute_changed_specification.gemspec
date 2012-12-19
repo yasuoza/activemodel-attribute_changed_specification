@@ -8,6 +8,9 @@ Gem::Specification.new do |gem|
   gem.description   = %q{Expand _changed? method. Enable to specify changed attribute value}
   gem.summary       = %q{Expand _changed? method. Enable to specify changed attribute value}
   gem.homepage      = 'https://github.com/YasuOza/activemodel-attribute_changed_specification'
+
+  gem.files         = `git ls-files`.split("\n")
+  gem.test_files    = `git ls-files -- test/*`.split("\n")
   gem.require_paths = ['lib']
 
   gem.add_dependency 'activemodel'
