@@ -27,6 +27,12 @@ user.name = 'Bob'
 user.name_changed?(from: nil, to: 'Bob') # => true
 user.name_changed?(from: 'Paul', to: 'Bob') # => false
 ```
+using only from or to
+
+```ruby
+user.name_changed?(to: 'Bob') # => true
+user.name_changed?(from: 'Paul') # => false
+```
 
 You can still use original `_changed?` method.
 
