@@ -10,14 +10,16 @@ module AttributeChangedSpecification
           else
             return false unless self.changes.include?(attr)
             from = args[0][:from]
-            to   = args[0][:to] 
-            
+            to   = args[0][:to]
+
             if from && to
               self.changes[attr][0] == from && __send__(attr) == to
             elsif from
               self.changes[attr][0] == from
-            else
+            elsif to
               __send__(attr) == to
+            else
+              attribute_changed_without_specification?(attr, args)
             end
           end
         end

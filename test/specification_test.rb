@@ -73,7 +73,7 @@ class DirtyTest < ActiveModel::TestCase
     assert @model.color_changed?
     assert @model.color_changed?(from: 'red', to: 'green')
   end
-  
+
   test "dectect change passing from or to" do
     @model.color = 'red'
     @model.save
@@ -82,6 +82,12 @@ class DirtyTest < ActiveModel::TestCase
     assert @model.color_changed?
     assert @model.color_changed?(from: 'red')
 
-    assert @model.color_changed?(to: 'green')  
+    assert @model.color_changed?(to: 'green')
+  end
+
+  test "pass *args to original method when invalid arguments was given" do
+    @model.color = 'red'
+
+    assert_raise(ArgumentError) { @model.color_changed?(via: self) }
   end
 end
