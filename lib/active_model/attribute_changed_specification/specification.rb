@@ -9,7 +9,16 @@ module AttributeChangedSpecification
             attribute_changed_without_specification?(attr)
           else
             return false unless self.changes.include?(attr)
-            self.changes[attr][0] == args[0][:from] && __send__(attr) == args[0][:to]
+            from = args[0][:from]
+            to   = args[0][:to] 
+            
+            if from && to
+              self.changes[attr][0] == from && __send__(attr) == to
+            elsif from
+              self.changes[attr][0] == from
+            else
+              __send__(attr) == to
+            end
           end
         end
         alias_method_chain :attribute_changed?, :specification

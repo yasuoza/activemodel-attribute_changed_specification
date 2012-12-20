@@ -73,4 +73,15 @@ class DirtyTest < ActiveModel::TestCase
     assert @model.color_changed?
     assert @model.color_changed?(from: 'red', to: 'green')
   end
+  
+  test "dectect change passing from or to" do
+    @model.color = 'red'
+    @model.save
+    @model.color = 'green'
+
+    assert @model.color_changed?
+    assert @model.color_changed?(from: 'red')
+
+    assert @model.color_changed?(to: 'green')  
+  end
 end
