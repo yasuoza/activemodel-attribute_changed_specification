@@ -30,6 +30,8 @@ user.name_changed?(from: 'Paul', to: 'Bob') # => false
 using only from or to
 
 ```ruby
+user = User.new
+user.name = 'Bob'
 user.name_changed?(to: 'Bob') # => true
 user.name_changed?(from: 'Paul') # => false
 ```
