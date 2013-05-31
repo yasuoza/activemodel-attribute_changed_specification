@@ -1,5 +1,5 @@
 # activemodel-attribute_changed_specification
-[![Build Status](https://travis-ci.org/YasuOza/activemodel-attribute_changed_specification.png?branch=master)](https://travis-ci.org/YasuOza/activemodel-attribute_changed_specification)
+[![Build Status](https://travis-ci.org/yasuoza/activemodel-attribute_changed_specification.png?branch=master)](https://travis-ci.org/yasuoza/activemodel-attribute_changed_specification)
 
 Expand `_changed?` method defined in ActiveModel::Dirty. You can specify changed attribute value.
 
