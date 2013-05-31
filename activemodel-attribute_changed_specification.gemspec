@@ -15,5 +15,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'activemodel'
   gem.add_dependency 'activerecord'
-  gem.add_development_dependency 'minitest', '>= 3'
+
+  gem.add_development_dependency 'bundler'
+  gem.add_development_dependency 'minitest', '~> 4.7'
 end
