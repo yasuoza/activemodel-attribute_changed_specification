@@ -43,3 +43,7 @@ user = User.new
 user.name = 'Bob'
 user.name_changed? # => true
 ```
+
+## Supports
+
+* rails >= 3.2
