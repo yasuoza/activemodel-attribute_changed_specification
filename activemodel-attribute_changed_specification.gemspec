@@ -13,8 +13,8 @@ Gem::Specification.new do |gem|
   gem.test_files    = `git ls-files -- test/*`.split("\n")
   gem.require_paths = ['lib']
 
-  gem.add_dependency 'activemodel'
-  gem.add_dependency 'activerecord'
+  gem.add_dependency 'activemodel', '>= 3.2'
+  gem.add_dependency 'activerecord', '>= 3.2'
 
   gem.add_development_dependency 'bundler'
   gem.add_development_dependency 'minitest', '~> 4.7'
