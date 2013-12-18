@@ -17,5 +17,4 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'activerecord', '>= 3.2'
 
   gem.add_development_dependency 'bundler'
-  gem.add_development_dependency 'minitest'
 end
