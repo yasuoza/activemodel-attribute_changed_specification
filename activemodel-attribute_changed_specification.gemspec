@@ -6,8 +6,9 @@ Gem::Specification.new do |gem|
   gem.authors       = 'Yasuharu Ozaki'
   gem.email         = 'yasuharu.ozaki@gmail.com'
   gem.description   = %q{Expand _changed? method. Enable to specify changed attribute value}
-  gem.summary       = %q{Expand _changed? method. Enable to specify changed attribute value}
+  gem.summary       = %q{Expand _changed? method}
   gem.homepage      = 'https://github.com/YasuOza/activemodel-attribute_changed_specification'
+  gem.license       = 'MIT'
 
   gem.files         = `git ls-files`.split("\n")
   gem.test_files    = `git ls-files -- test/*`.split("\n")
