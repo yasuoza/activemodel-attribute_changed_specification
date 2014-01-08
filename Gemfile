@@ -4,3 +4,4 @@ gemspec
 
 gem "appraisal"
 
+gem 'coveralls', require: false

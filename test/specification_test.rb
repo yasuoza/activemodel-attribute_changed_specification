@@ -1,6 +1,6 @@
 # This code is mostly derived from rails/activemodel/test/cases/dirty_test.rb
 
-require 'minitest/autorun'
+require 'test_helper'
 require 'active_model'
 require 'active_model/attribute_changed_specification/specification'
 
