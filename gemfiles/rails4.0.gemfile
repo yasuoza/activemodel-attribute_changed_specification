@@ -3,6 +3,7 @@
 source "https://rubygems.org"
 
 gem "appraisal"
+gem "coveralls", :require=>false
 gem "rails", "~> 4.0.0rc1"
 
 gemspec :path=>"../"
