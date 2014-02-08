@@ -14,3 +14,4 @@ install:
 gemfile:
   - gemfiles/rails3.2.gemfile
   - gemfiles/rails4.0gemfile
+  - gemfiles/rails4.1gemfile
