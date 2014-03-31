@@ -46,4 +46,4 @@ user.name_changed? # => true
 
 ## Supports
 
-* rails >= 3.2
+* 3.2 <= rails < 4.1 (Rails >= supports this format by itself)
